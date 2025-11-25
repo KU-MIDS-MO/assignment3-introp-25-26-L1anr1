@@ -1,7 +1,7 @@
 import numpy as np
 
 def count_values_in_bins(data, bin_edges):
-    ### Replace with your own code (begin) ###
-    pass
-    ### Replace with your own code (end)   ###
-
+    
+    counts, _ = np.histogram(data, bins=bin_edges)
+    
+    return counts
